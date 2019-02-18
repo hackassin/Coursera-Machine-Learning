@@ -1,0 +1,300 @@
+GNU Octave, version 4.4.1
+Copyright (C) 2018 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type 'warranty'.
+
+Octave was configured for "x86_64-w64-mingw32".
+
+Additional information about Octave is available at https://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit https://www.octave.org/get-involved.html
+
+Read https://www.octave.org/bugs.html to learn how to submit bug reports.
+For information about changes from previous versions, type 'news'.
+
+octave:1> t = [0:0.01:0.98]
+t =
+
+ Columns 1 through 11:
+
+   0.00000   0.01000   0.02000   0.03000   0.04000   0.05000   0.06000   0.07000   0.08000   0.09000   0.10000
+
+ Columns 12 through 22:
+
+   0.11000   0.12000   0.13000   0.14000   0.15000   0.16000   0.17000   0.18000   0.19000   0.20000   0.21000
+
+ Columns 23 through 33:
+
+   0.22000   0.23000   0.24000   0.25000   0.26000   0.27000   0.28000   0.29000   0.30000   0.31000   0.32000
+
+ Columns 34 through 44:
+
+   0.33000   0.34000   0.35000   0.36000   0.37000   0.38000   0.39000   0.40000   0.41000   0.42000   0.43000
+
+ Columns 45 through 55:
+
+   0.44000   0.45000   0.46000   0.47000   0.48000   0.49000   0.50000   0.51000   0.52000   0.53000   0.54000
+
+ Columns 56 through 66:
+
+   0.55000   0.56000   0.57000   0.58000   0.59000   0.60000   0.61000   0.62000   0.63000   0.64000   0.65000
+
+ Columns 67 through 77:
+
+   0.66000   0.67000   0.68000   0.69000   0.70000   0.71000   0.72000   0.73000   0.74000   0.75000   0.76000
+
+ Columns 78 through 88:
+
+   0.77000   0.78000   0.79000   0.80000   0.81000   0.82000   0.83000   0.84000   0.85000   0.86000   0.87000
+
+ Columns 89 through 99:
+
+   0.88000   0.89000   0.90000   0.91000   0.92000   0.93000   0.94000   0.95000   0.96000   0.97000   0.98000
+
+octave:2> y1 = sin(2*pi*4t)
+parse error:
+
+  syntax error
+
+>>> y1 = sin(2*pi*4t)
+                   ^
+
+octave:2> y1 = sin(2*pi*4*t)
+y1 =
+
+ Columns 1 through 11:
+
+   0.00000   0.24869   0.48175   0.68455   0.84433   0.95106   0.99803   0.98229   0.90483   0.77051   0.58779
+
+ Columns 12 through 22:
+
+   0.36812   0.12533  -0.12533  -0.36812  -0.58779  -0.77051  -0.90483  -0.98229  -0.99803  -0.95106  -0.84433
+
+ Columns 23 through 33:
+
+  -0.68455  -0.48175  -0.24869  -0.00000   0.24869   0.48175   0.68455   0.84433   0.95106   0.99803   0.98229
+
+ Columns 34 through 44:
+
+   0.90483   0.77051   0.58779   0.36812   0.12533  -0.12533  -0.36812  -0.58779  -0.77051  -0.90483  -0.98229
+
+ Columns 45 through 55:
+
+  -0.99803  -0.95106  -0.84433  -0.68455  -0.48175  -0.24869  -0.00000   0.24869   0.48175   0.68455   0.84433
+
+ Columns 56 through 66:
+
+   0.95106   0.99803   0.98229   0.90483   0.77051   0.58779   0.36812   0.12533  -0.12533  -0.36812  -0.58779
+
+ Columns 67 through 77:
+
+  -0.77051  -0.90483  -0.98229  -0.99803  -0.95106  -0.84433  -0.68455  -0.48175  -0.24869  -0.00000   0.24869
+
+ Columns 78 through 88:
+
+   0.48175   0.68455   0.84433   0.95106   0.99803   0.98229   0.90483   0.77051   0.58779   0.36812   0.12533
+
+ Columns 89 through 99:
+
+  -0.12533  -0.36812  -0.58779  -0.77051  -0.90483  -0.98229  -0.99803  -0.95106  -0.84433  -0.68455  -0.48175
+
+octave:3> y2 = cos(2*pi*4*t)
+y2 =
+
+ Columns 1 through 10:
+
+   1.000000   0.968583   0.876307   0.728969   0.535827   0.309017   0.062791  -0.187381  -0.425779  -0.637424
+
+ Columns 11 through 20:
+
+  -0.809017  -0.929776  -0.992115  -0.992115  -0.929776  -0.809017  -0.637424  -0.425779  -0.187381   0.062791
+
+ Columns 21 through 30:
+
+   0.309017   0.535827   0.728969   0.876307   0.968583   1.000000   0.968583   0.876307   0.728969   0.535827
+
+ Columns 31 through 40:
+
+   0.309017   0.062791  -0.187381  -0.425779  -0.637424  -0.809017  -0.929776  -0.992115  -0.992115  -0.929776
+
+ Columns 41 through 50:
+
+  -0.809017  -0.637424  -0.425779  -0.187381   0.062791   0.309017   0.535827   0.728969   0.876307   0.968583
+
+ Columns 51 through 60:
+
+   1.000000   0.968583   0.876307   0.728969   0.535827   0.309017   0.062791  -0.187381  -0.425779  -0.637424
+
+ Columns 61 through 70:
+
+  -0.809017  -0.929776  -0.992115  -0.992115  -0.929776  -0.809017  -0.637424  -0.425779  -0.187381   0.062791
+
+ Columns 71 through 80:
+
+   0.309017   0.535827   0.728969   0.876307   0.968583   1.000000   0.968583   0.876307   0.728969   0.535827
+
+ Columns 81 through 90:
+
+   0.309017   0.062791  -0.187381  -0.425779  -0.637424  -0.809017  -0.929776  -0.992115  -0.992115  -0.929776
+
+ Columns 91 through 99:
+
+  -0.809017  -0.637424  -0.425779  -0.187381   0.062791   0.309017   0.535827   0.728969   0.876307
+
+octave:4> plot(t,y2);
+octave:5> plot(t,y1);
+octave:6> plot(t,y2);
+octave:7> plot(t,y1);
+octave:8> plot(t,y2);
+octave:9> plot(t,y1);
+octave:10> hold on;
+octave:11> plot(t,y2,'r');
+octave:12> xlabel('time');
+octave:13> ylabel('value');
+octave:14> legend('sin','cos');
+octave:15> title('Merged Plot');
+octave:16> figure(1);
+octave:17> plot(t,y1);
+octave:18> figure(2);
+octave:19> plot(t,y2);
+octave:20> subplot(1,2,1); #Divides plot 1x2 grid (1st two args, last arg: 1st element)
+octave:21> plot(t,y1);#plot the sine graph in the 1sy grid
+octave:22> plot(t,y2);#plot the cosine graph in the 1st grid
+octave:23> subplot(1,2,2);
+octave:24> plot(t,y2);#plot the cosine graph in the 2nd grid
+octave:25> plot(t,y2);#plot the cosine graph in the 2nd grid
+#line 21-25 gave me wrong output because I plotted the 2nd one in 1st grid
+octave:26> subplot(1,2,1);
+octave:27> plot(t,y1);
+octave:28> subplot(1,2,2);
+octave:29> plot(t,y2);
+octave:30> axis([0.5 1 -1 1])
+octave:31> #Range - vertical: 0.5 -1, horizontal: -1 1
+octave:31> clf; #clear figure
+octave:32> subplot(1,2,1);
+octave:33> plot(t,y1);
+octave:34> subplot(1,2,2);
+octave:35> plot(t,y2);
+octave:36> clf;
+octave:37> A = magic(5)
+A =
+
+   17   24    1    8   15
+   23    5    7   14   16
+    4    6   13   20   22
+   10   12   19   21    3
+   11   18   25    2    9
+
+octave:38> imagesc(A); #Plots a 5x5 grid with diff colors
+octave:39> color bar
+warning: the 'color' function belongs to the optim package from Octave Forge
+which you have installed but not loaded.  To load the package, run 'pkg
+load optim' from the Octave prompt.
+
+Please read <https://www.octave.org/missing.html> to learn how you can
+contribute missing functionality.
+error: 'color' undefined near line 1 column 1
+octave:39> pkg load optim
+octave:40> color bar
+warning: the 'color' function belongs to the optim package from Octave Forge but
+has not yet been implemented.
+
+Please read <https://www.octave.org/missing.html> to learn how you can
+contribute missing functionality.
+error: 'color' undefined near line 1 column 1
+octave:40> colorbar
+octave:41> imagesc(A), colorbar, colormap(green);
+error: 'green' undefined near line 1 column 32
+octave:41> imagesc(A), colorbar, colormap green;
+error: colormap: failed to set MAP <green>
+error: called from
+    colormap at line 111 column 11
+octave:41> imagesc(A), colorbar, colormap gray;
+octave:42> imagesc(A), colorbar, colormap blue;
+error: colormap: failed to set MAP <blue>
+error: called from
+    colormap at line 111 column 11
+octave:42> help colormap;
+'colormap' is a function from the file C:\Octave\OCTAVE~1.1\share\octave\4.4.1\m\image\colormap.m
+
+ -- CMAP = colormap ()
+ -- CMAP = colormap (MAP)
+ -- CMAP = colormap ("default")
+ -- CMAP = colormap (MAP_NAME)
+ -- CMAP = colormap (HAX, ...)
+ -- colormap MAP_NAME
+     Query or set the current colormap.
+
+     With no input arguments, 'colormap' returns the current color map.
+
+     'colormap (MAP)' sets the current colormap to MAP.  The colormap
+     should be an N row by 3 column matrix.  The columns contain red,
+     green, and blue intensities respectively.  All entries must be
+     between 0 and 1 inclusive.  The new colormap is returned.
+
+     'colormap ("default")' restores the default colormap (the 'viridis'
+     map with 64 entries).  The default colormap is returned.
+
+     The map may also be specified by a string, MAP_NAME, which is the
+     name of a function that returns a colormap.
+
+     If the first argument HAX is an axes handle, then the colormap for
+     those axes is queried or set.
+
+     For convenience, it is also possible to use this function with the
+     command form, 'colormap MAP_NAME'.
+
+     The list of built-in colormaps is:
+
+     Map         Description
+     --------------------------------------------------------------------------
+     viridis     default
+     jet         colormap traversing blue, cyan, green, yellow, red.
+     cubehelix   colormap traversing black, blue, green, red, white with
+                 increasing intensity.
+     hsv         cyclic colormap traversing Hue, Saturation, Value space.
+     rainbow     colormap traversing red, yellow, blue, green, violet.
+     ---------   --------------------------------------------------------------
+     hot         colormap traversing black, red, orange, yellow, white.
+     cool        colormap traversing cyan, purple, magenta.
+     spring      colormap traversing magenta to yellow.
+     summer      colormap traversing green to yellow.
+     autumn      colormap traversing red, orange, yellow.
+     winter      colormap traversing blue to green.
+     ---------   --------------------------------------------------------------
+     gray        colormap traversing black to white in shades of gray.
+     bone        colormap traversing black, gray-blue, white.
+     copper      colormap traversing black to light copper.
+     pink        colormap traversing black, gray-pink, white.
+     ocean       colormap traversing black, dark-blue, white.
+     ---------   --------------------------------------------------------------
+     colorcube   equally spaced colors in RGB color space.
+     flag        cyclic 4-color map of red, white, blue, black.
+     lines       cyclic colormap with colors from axes "ColorOrder"
+                 property.
+     prism       cyclic 6-color map of red, orange, yellow, green, blue,
+                 violet.
+     ---------   --------------------------------------------------------------
+     white       all white colormap (no colors).
+
+     See also: viridis, jet, cubehelix, hsv, rainbow, hot, cool, spring,
+     summer, autumn, winter, gray, bone, copper, pink, ocean, colorcube,
+     flag, lines, prism, white.
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at https://www.octave.org and via the help@octave.org
+mailing list.
+octave:43> imagesc(A), colorbar, colormap ocean;
+octave:44> imagesc(A), colorbar, colormap copper;
+octave:45> imagesc(A), colorbar, colormap prism;
+octave:46> imagesc(A), colorbar, colormap flag;
+octave:47> imagesc(A), colorbar, colormap lines;
+octave:48> imagesc(A), colorbar, colormap colorcube;
+octave:49> imagesc(A), colorbar, colormap cubehelix;
+octave:50> imagesc(A), colorbar, colormap hsv;

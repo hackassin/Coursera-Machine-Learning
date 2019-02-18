@@ -1,0 +1,155 @@
+GNU Octave, version 4.4.1
+Copyright (C) 2018 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type 'warranty'.
+
+Octave was configured for "x86_64-w64-mingw32".
+
+Additional information about Octave is available at https://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit https://www.octave.org/get-involved.html
+
+Read https://www.octave.org/bugs.html to learn how to submit bug reports.
+For information about changes from previous versions, type 'news'.
+
+#initializing a vector matrix
+octave:1> A = [1 2; 3 4; 5 6];
+octave:2> A
+A =
+
+   1   2
+   3   4
+   5   6
+
+octave:3> V = [1 2 3]
+V =
+
+   1   2   3
+
+octave:4> w = randn(1,3);
+octave:5> w
+w =
+
+   0.080128   0.255278  -1.002988
+
+octave:6> w = randn(1,3)
+w =
+
+  -1.43522  -0.29006   1.11089
+
+octave:7> w = randn(0,3)
+w = [](0x3)
+octave:8> w = randn (2,3)
+w =
+
+  -2.35972   1.25747   0.74258
+  -0.57238   2.70842   2.20403
+
+octave:9> w = randn(1,100)
+w =
+
+ Columns 1 through 10:
+
+  -0.493039   0.404855   1.531180  -0.273810   0.692574  -0.376706  -0.746486   0.808372   1.082853  -0.459004
+
+ Columns 11 through 20:
+
+  -1.215111  -1.287317   0.217249   1.200840  -1.005836  -2.015189   0.429838  -2.455981  -0.040263  -0.892568
+
+ Columns 21 through 30:
+
+  -0.137333   0.612469  -0.717426  -0.996906   0.140918   0.254565  -0.206344   2.369930  -1.962787   0.172451
+
+ Columns 31 through 40:
+
+  -0.358356   1.904405  -0.589134  -1.612952  -1.073178   0.705945   2.251045  -0.314819  -0.324525   0.337204
+
+ Columns 41 through 50:
+
+  -2.607428  -2.330861   0.425313   0.855031   0.438885   1.848060   0.884042   0.627392  -1.149816   1.041241
+
+ Columns 51 through 60:
+
+  -0.666072  -0.863453   0.720259   2.059668  -0.212043  -0.353723  -0.594280   0.989257  -1.228740   0.821579
+
+ Columns 61 through 70:
+
+  -2.780196  -0.581823   1.607572  -0.210835   0.425206   0.464465   3.096434  -0.654863  -1.402686   0.830433
+
+ Columns 71 through 80:
+
+  -1.070995   1.342359   2.104442   1.439956  -0.262699  -0.792237   1.313962   1.488402   1.310021  -1.179423
+
+ Columns 81 through 90:
+
+  -1.083812  -0.335519  -1.220298   1.471193   0.692455   0.291764   0.655160   0.726798   0.673464   0.909671
+
+ Columns 91 through 100:
+
+   0.652066   0.617140   0.484778  -0.332232  -0.737613   0.982260  -1.065312   0.011762   0.176341   0.598577
+
+octave:10> hist (w)
+octave:11> hist (w)
+octave:12> hist (w)
+octave:13> hist (w)
+octave:14> x = eye (5)
+x =
+
+Diagonal Matrix
+
+   1   0   0   0   0
+   0   1   0   0   0
+   0   0   1   0   0
+   0   0   0   1   0
+   0   0   0   0   1
+
+octave:15> help eye
+'eye' is a built-in function from the file libinterp/corefcn/data.cc
+
+ -- eye (N)
+ -- eye (M, N)
+ -- eye ([M N])
+ -- eye (..., CLASS)
+     Return an identity matrix.
+
+     If invoked with a single scalar argument N, return a square NxN
+     identity matrix.
+
+     If supplied two scalar arguments (M, N), 'eye' takes them to be the
+     number of rows and columns.  If given a vector with two elements,
+     'eye' uses the values of the elements as the number of rows and
+     columns, respectively.  For example:
+
+          eye (3)
+           =>  1  0  0
+               0  1  0
+               0  0  1
+
+     The following expressions all produce the same result:
+
+          eye (2)
+          ==
+          eye (2, 2)
+          ==
+          eye (size ([1, 2; 3, 4]))
+
+     The optional argument CLASS, allows 'eye' to return an array of the
+     specified type, like
+
+          val = zeros (n,m, "uint8")
+
+     Calling 'eye' with no arguments is equivalent to calling it with an
+     argument of 1.  Any negative dimensions are treated as zero.  These
+     odd definitions are for compatibility with MATLAB.
+
+     See also: speye, ones, zeros.
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at https://www.octave.org and via the help@octave.org
+mailing list.
