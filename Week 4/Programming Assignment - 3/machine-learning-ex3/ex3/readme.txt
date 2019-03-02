@@ -1,0 +1,1 @@
+This is the first exercise that will introduce you to the world of Deep Learning with Neural Networks
