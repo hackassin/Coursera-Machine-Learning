@@ -15,30 +15,15 @@ for iter = 1:num_iters
     %
     % Hint: While debugging, it can be useful to print out the values
     %       of the cost function (computeCost) and gradient here.
-    %
+    %	
 predictions = X * theta;
-%printf("predictions\n");
-%disp(predictions);
-%error = (predictions - y).*(X(:,2));
 error = (predictions - y);
-%errorRes = error.*(X(:,2));
-%printf("error\n");
-%disp(error);
 temp1 = theta(1) - (alpha/m) * sum(error.*(X(:,1)));
 temp2 = theta(2) - (alpha/m) * sum(error.*(X(:,2)));
-%printf("delta\n");
-%disp(delta);
-%theta = theta - (delta*alpha);
-%Note: Using the above commented equation leads
-%to incorrect update; Check notes for simultaneous update
-%printf("theta is: ");
-%disp(theta);
-theta = [temp1;temp2];
     % ============================================================
-
     % Save the cost J in every iteration  
     J_history(iter) = computeCost(X, y, theta);
-	printf("Compute Cost: J_history(iter%d) = %f\n", iter,J_history(iter));
+	%printf("Compute Cost: J_history(iter%d) = %f\n", iter,J_history(iter));
 end
 predict3 = [1, 6] * theta;
 fprintf('For population = 60,000, we predict a profit of %f\n',...
